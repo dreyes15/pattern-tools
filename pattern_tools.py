@@ -73,9 +73,3 @@ def find_pattern(value, length):
     else:
         for found in matches:
             print "[*] Exact match at offset: %i" % (found)
-
-if __name__ == '__main__':
-    pattern_create(50000)
-    #0x416f3841 = Ao8A Big eandian
-    #0x41386f41 = A8oA little eandian
-    pattern_offset('0x41386f41', 50000)
